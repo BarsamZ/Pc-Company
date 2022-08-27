@@ -1,0 +1,10 @@
+<input type="text" appColorful style="width: 50rem; border-width: 0.2rem;">
+<p [appAppHighlight]="color">Hello word!</p>
+
+<div *appCarousel="let image  from images autoplay 'Yes'; let ctrl = controller">
+<img [src]="image"> 
+<button (click)="ctrl.next()">next</button>
+<button (click)="ctrl.prev()">previous</button>
+
+</div>
+
